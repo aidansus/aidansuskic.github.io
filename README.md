@@ -8,10 +8,7 @@
 
 * **[INTEL Sustainability](./projects/intel-sustainability.md)**
   * Brief Summary
-
-* **[Digital Audience Segmentation Analysis](./projects/digital-audience-segmentation-analysis.md)**
-  * Brief Summary
-
+    
 ---
 
 ## Professional Profile
