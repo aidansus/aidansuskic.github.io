@@ -1,7 +1,14 @@
 # Data Center Site Selection & Grid Analysis for Intel
 
 ## Project Objective
-Co-designed with the Intel Sustainability Team, this project identifies the optimal location for a new semiconductor data center by analyzing US regional energy production, grid demand, and renewable energy capacity[cite: 2]. The analysis synthesizes millions of rows of power generation data to recommend a site that meets strict corporate sustainability benchmarks (93% renewable energy) and operational power demands (100 MW/year)[cite: 23].
+Intel is planning to build a new data center and needs to identify the optimal location within the United States. The ideal site must meet energy demands of roughly 100 MW/year while adhering to Intel's sustainability goals, which require using 93% renewable energy. My objective was to analyze US energy grid data, evaluate regional power production, and recommend a state that provides an energy surplus and relies heavily on renewable sources.
+
+## The Approach
+To solve this, I analyzed three primary datasets containing daily US grid demand, regional energy generation by source, and specific power plant outputs for the year 2022. The project was broken down into three phases:
+
+1. **Data Exploration (SQL):** I queried the raw data to calculate the net energy production (generation minus demand) for each region to find grids operating at a surplus[cite: 4, 5]. 
+2. **Data Transformation (SQL):** I engineered a new dataset by categorizing dozens of specific power sources (wind, solar, coal, nuclear) into binary `renewable energy` and `fossil fuel` labels to prepare the data for visual trend analysis[cite: 8, 9].
+3. **Visual Storytelling (Tableau):** I built dynamic dashboards to map out regional surpluses, track hourly generation trends, and drill down into state-level renewable output[cite: 18, 22].
 
 ## Core Competencies Demonstrated
 *   **Programmatic Data Labeling:** Transformed raw energy generation metrics into binary categorical labels (`renewable energy` vs. `fossil fuel`) using SQL to enable downstream machine learning and visual analysis[cite: 8, 9].
