@@ -11,7 +11,7 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 3. **Visual Storytelling (Tableau):** I built dynamic dashboards to map out regional surpluses, track hourly generation trends, and drill down into state-level renewable output[cite: 18, 22].
 
 ## Key Data Insights
-In order to find a suitable location for Intel's new data center our first step is to locate regions with surplus in energy production. A short SQL query aggregates data from a dataset containing national energy production and consumption in order to isolate potential site locations. 
+1) In order to find a suitable location for Intel's new data center our first step is to locate regions with surplus in energy production. A short SQL query aggregates data from a dataset containing national energy production and consumption in order to isolate potential site locations. 
 ```sql
 --Surplus Energy Production
 SELECT
