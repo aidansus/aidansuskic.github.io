@@ -11,7 +11,8 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 3. **Visual Storytelling (Tableau):** I built dynamic dashboards to map out regional surpluses, track hourly generation trends, and drill down into state-level renewable output[cite: 18, 22].
 
 ## Key Data Insights
-1) In order to find a suitable location for Intel's new data center our first step is to locate regions with surplus in energy production. A short SQL query aggregates data from a dataset containing national energy production and consumption in order to isolate potential site locations. 
+1. Identifying an Energy Surplus
+To find a suitable location for Intel's new data center, my first step was to identify grids operating with a power surplus. By querying national energy production against local demand, I isolated the 5 US regions that produce more energy than they consume.
 ```sql
 --Surplus Energy Production
 SELECT
@@ -20,8 +21,7 @@ SELECT
 FROM intel.energy_data
 GROUP BY region
 ORDER BY net_energy DESC;
-```
-With our aggregated data we isolate 5 regions with surplus energy production. 
+``` 
 <img width="606" height="426" alt="Screenshot 2026-10-18 at 3 16 11 PM" src="https://github.com/user-attachments/assets/6bd5eeb3-884d-4c00-b4a8-38cc51266e33" />
 
 2. Identifying Renewable Leaders
