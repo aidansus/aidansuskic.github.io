@@ -15,9 +15,9 @@ In order to find a suitable location for Intel's new data center our first step 
 ```sql
 --Surplus Energy Production
 SELECT
-region,
-SUM(net_ generation - demand) AS net_energy
-FROM intel. energy_data
+  region,
+  SUM(net_ generation - demand) AS net_energy
+FROM intel.energy_data
 GROUP BY region
 ORDER BY net_energy DESC;
-'''
+
