@@ -16,7 +16,7 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 --Surplus Energy Production
 SELECT
   region,
-  SUM(net_ generation - demand) AS net_energy
+  SUM(net_generation - demand) AS net_energy
 FROM intel.energy_data
 GROUP BY region
 ORDER BY net_energy DESC;
