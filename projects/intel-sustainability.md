@@ -37,3 +37,6 @@ FROM intel. energy_data
 GROUP BY region
 ORDER BY percent_renewable_generation DESC;
 ```
+<p align="center">
+<img width="604" height="427" alt="Screenshot 2026-10-18 at 3 34 29 PM" src="https://github.com/user-attachments/assets/2a9271a9-b538-4fd0-8fa5-637d8d66b6fe" />
+</p>
