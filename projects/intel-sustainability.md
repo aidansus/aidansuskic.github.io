@@ -21,4 +21,5 @@ FROM intel.energy_data
 GROUP BY region
 ORDER BY net_energy DESC;
 ```
+With our aggregated data we isolate 5 regions with surplus energy production. 
 <img width="606" height="426" alt="Screenshot 2026-10-18 at 3 16 11 PM" src="https://github.com/user-attachments/assets/6bd5eeb3-884d-4c00-b4a8-38cc51266e33" />
