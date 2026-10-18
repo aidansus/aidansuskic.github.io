@@ -27,4 +27,4 @@ ORDER BY net_energy DESC;
 </p>
 
 ### 2. Identifying Renewable Leaders
-Next, I queried the dataset to calculate the percentage of renewable energy generation versus total net generation across all regions. The data highlights the Northwest as the definitive leader, with 52.3% of its grid powered by renewables, making it the strongest candidate for Intel's green energy goals.
+Next, I queried the dataset to calculate the percentage of total energy generation that came from renewable sources for each region.. The data highlights the Northwest as the definitive leader, with 52.3% of its grid powered by renewables, making it the strong candidate for Intel's green energy goals. 
