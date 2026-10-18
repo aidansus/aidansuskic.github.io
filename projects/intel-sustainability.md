@@ -10,7 +10,6 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 2. **Data Transformation (SQL):** I engineered a new dataset by categorizing dozens of specific power sources (wind, solar, coal, nuclear) into binary `renewable energy` and `fossil fuel` labels to prepare the data for visual trend analysis[cite: 8, 9].
 3. **Visual Storytelling (Tableau):** I built dynamic dashboards to map out regional surpluses, track hourly generation trends, and drill down into state-level renewable output[cite: 18, 22].
 
-
 ## Key Data Insights
 In order to find a suitable location for Intel's new data center our first step is to locate regions with surplus in energy production. A short SQL query aggregates data from a dataset containing national energy production and consumption in order to isolate potential site locations. 
 ```sql
