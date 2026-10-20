@@ -33,7 +33,7 @@ Next, I queried the dataset to calculate the percentage of total energy generati
 SELECT
   region,
   (SUM(hydropower_and_pumped_storage + wind + solar) / SUM(net_generation)) * 100 AS percent_renewable_generation
-FROM intel. energy_data
+FROM intel.energy_data
 GROUP BY region
 ORDER BY percent_renewable_generation DESC;
 ```
@@ -48,15 +48,15 @@ To determine if renewable energy is generated consistently throughout the year, 
 SELECT
   date, 
   region,
-  (hydropower_and_pumped_storage + wind + solar) AS energy-generated_mw, 'renewable energy' AS energy_type
-FROM intel. energy_data
+  (hydropower_and_pumped_storage + wind + solar) AS energy_generated_mw, 'renewable energy' AS energy_type
+FROM intel.energy_data
 
 UNION ALL
 
 SELECT
   date,
   region,
-  (all_petroleum products + coal + natural gas + nuclear + other_fuel_sources) AS energy-generated_mw, 'fossil fuel' AS energy_type
-FROM intel. energy_data
+  (all_petroleum products + coal + natural gas + nuclear + other_fuel_sources) AS energy_generated_mw, 'fossil fuel' AS energy_type
+FROM intel.energy_data
 ORDER BY date, region, energy_type, energy_generated_mw;
 ```
