@@ -48,8 +48,7 @@ To determine if renewable energy is generated consistently throughout the year, 
 SELECT
   date, 
   region,
-  (hydropower_and_pumped_storage + wind + solar) AS energy-generated_mw,
-'renewable energy' AS energy_type
+  (hydropower_and_pumped_storage + wind + solar) AS energy-generated_mw, 'renewable energy' AS energy_type
 FROM intel. energy_data
 
 UNION ALL
