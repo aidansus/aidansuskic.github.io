@@ -61,5 +61,5 @@ FROM intel.energy_data
 ORDER BY date, region, energy_type, energy_generated_mw;
 ```
 <p align="center">
-<img width="2400" height="1792" alt="Gemini_Generated_Image_8d3kb18d3kb18d3k" src="https://github.com/user-attachments/assets/95e85605-c472-4804-b929-12029dd05231" />
+<img width="604" height="427" alt="Gemini_Generated_Image_8d3kb18d3kb18d3k" src="https://github.com/user-attachments/assets/95e85605-c472-4804-b929-12029dd05231" />
 </p>
