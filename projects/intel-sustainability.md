@@ -59,5 +59,5 @@ SELECT
   region,
   (all_petroleum products + coal + natural gas + nuclear + other_fuel_sources) AS energy-generated_mw, 'fossil fuel' AS energy_type
 FROM intel. energy_data
-ORDER BY date, region, energy_type, energy-generated_mw;
+ORDER BY date, region, energy_type, energy_generated_mw;
 ```
