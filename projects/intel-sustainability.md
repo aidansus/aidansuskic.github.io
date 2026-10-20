@@ -42,7 +42,7 @@ ORDER BY percent_renewable_generation DESC;
 </p>
 
 ### 3. Tracking Seasonal Generation Trends
-To determine if renewable energy is generated consistently throughout the year, I needed to inspect time-series data for 2022. To investigate, I needed to restructure the raw data. I grouped specific energy source columns into a new energy_type column, dividing the data cleanly into 'renewable energy' and 'fossil fuel' categories.
+To determine if renewable energy is generated consistently throughout the year, I needed to inspect time-series data for 2022. To investigate, I needed to restructure the raw data. I grouped specific energy source columns into a new `energy_type` column, dividing the data cleanly into 'renewable energy' and 'fossil fuel' categories.
 ```sql
 --Time Series Data Adjustments
 SELECT
