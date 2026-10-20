@@ -40,3 +40,24 @@ ORDER BY percent_renewable_generation DESC;
 <p align="center">
 <img width="604" height="427" alt="Screenshot 2026-10-18 at 3 34 29 PM" src="https://github.com/user-attachments/assets/2a9271a9-b538-4fd0-8fa5-637d8d66b6fe" />
 </p>
+
+### 3. Tracking Seasonal Generation Trends
+To determine if renewable energy is generated consistently throughout the year, I needed to inspect time-series data for 2022. To investigate, I needed to restructure the raw data. I grouped specific energy source columns into a new energy_type column, dividing the data cleanly into 'renewable energy' and 'fossil fuel' categories.
+```sql
+--Union All Energy by Source
+SELECT
+  date, 
+  region,
+  (hydropower_and_pumped_storage + wind + solar) AS energy-generated_mw,
+'renewable energy' AS energy_type
+FROM intel. energy_data
+
+UNION ALL
+
+SELECT
+  date,
+  region,
+  (all_petroleum products + coal + natural gas + nuclear + other_fuel_sources) AS energy-generated_mw, 'fossil fuel' AS energy_type
+FROM intel. energy_data
+ORDER BY date, region, energy_type, energy-generated_mw;
+```
