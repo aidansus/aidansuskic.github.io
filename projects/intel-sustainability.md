@@ -12,7 +12,7 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 
 ## Key Data Insights
 ### 1. Identifying an Energy Surplus
-To find a suitable location for Intel's new data center, my first step was to identify grids operating with a power surplus. By querying national energy production against local demand, I isolated the 5 US regions that produce more energy than they consume.
+To find a suitable location for Intel's new data center, my first step was to identify grids operating with a power surplus. By querying national energy production against local demand, I isolated the 5 US regions that produce an energy surplus.
 ```sql
 --Surplus Energy Production
 SELECT
