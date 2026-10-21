@@ -42,7 +42,7 @@ ORDER BY percent_renewable_generation DESC;
 </p>
 
 ### 3. Tracking Seasonal Generation Trends
-To determine if renewable energy is generated consistently throughout the year, I needed to inspect time-series data for 2022. To investigate, I needed to restructure the raw data. I grouped specific energy source columns into a new `energy_type` column, dividing the data cleanly into 'renewable energy' and 'fossil fuel' categories. Visualizing our adjusted data shows that the Northwest generates renewable energy at a highly consistent rate, outperforming fossil fuels for half the year while never dropping below 2 million MW in output.
+To determine if renewable energy is generated consistently throughout the year, I needed to inspect time-series data for 2022. To investigate, I needed to restructure the raw data. I grouped specific energy source columns into a new `energy_type` column, dividing the data cleanly into 'renewable energy' and 'fossil fuel' categories. Visualizing our adjusted data shows that the Northwest generates renewable energy at a consistent rate, outperforming fossil fuels for half the year while never dropping below 2 million MW in output.
 ```sql
 --Time Series Data Adjustments
 SELECT
