@@ -6,7 +6,7 @@ Intel is planning to build a new data center and needs to identify the optimal l
 ## The Approach
 To solve this, I analyzed three primary datasets containing daily US grid demand, regional energy generation by source, and specific power plant outputs for the year 2022. The project was broken down into three phases:
 
-1. **Data Exploration (SQL):** I queried the raw data to calculate...
+1. **Data Exploration (SQL):** I queried data to find new 
 2. **Data Transformation (SQL):** I engineered a new dataset by categorizing dozens of specific power sources (wind, solar, coal, nuclear) into binary `renewable energy` and `fossil fuel` labels to prepare the data for visual trend analysis[cite: 8, 9].
 3. **Visual Storytelling (Tableau):** I built dynamic dashboards to map out regional surpluses, track hourly generation trends, and drill down into state-level renewable output[cite: 18, 22].
 
