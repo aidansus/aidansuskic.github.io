@@ -69,6 +69,7 @@ ORDER BY date, region, energy_type, energy_generated_mw;
 ### 4. State Specific Energy Generation
 From our previous queries and visualizations I was able to pinpoint the Northwest region as the top contender for Intel's new datacenter. To gain further insight into the region, specifically state specific energy generation, took joining two new datasets containing individual power plant data. After visualizing our combined dataset and filtering data for the Northwest region, the state of Washington stands out as a clear leader generating nearly 75 million MW of renewable energy in the year of 2022.
 ```sql
+--Combining Data
 SELECT
   a.*,
   b.*
