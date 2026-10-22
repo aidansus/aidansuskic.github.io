@@ -42,7 +42,7 @@ ORDER BY percent_renewable_generation DESC;
 </p>
 
 ### 3. Tracking Seasonal Generation Trends
-To determine if renewable energy is generated consistently throughout the year, I needed to inspect time-series data for 2022. To investigate, I needed to restructure the raw data. I grouped specific energy source columns into a new `energy_type` column, dividing the data cleanly into 'renewable energy' and 'fossil fuel' categories. Visualizing our adjusted data shows that the Northwest generates renewable energy at a consistent rate, outperforming fossil fuels for half the year while never dropping below 2 million MW in output.
+To determine if renewable energy is generated consistently throughout the year, I needed to inspect time-series data for 2022. To investigate, I needed to restructure the raw data. I grouped specific energy source columns into a new `energy_type` column, dividing the data cleanly into 'renewable energy' and 'fossil fuel' categories. Visualizing the adjusted data showed that the Northwest generated renewable energy at a consistent rate, outperforming fossil fuels for half the year while never dropping below 2 million MW in output.
 ```sql
 --Time Series Data Adjustments
 SELECT
@@ -67,7 +67,7 @@ ORDER BY date, region, energy_type, energy_generated_mw;
 </p>
 
 ### 4. State Specific Energy Generation
-From our previous queries and visualizations I was able to pinpoint the Northwest region as the top contender for Intel's new datacenter. To gain further insight into the region, specifically state specific energy generation, took joining two new datasets containing individual power plant data. After visualizing our combined dataset and filtering data for the Northwest region, the state of Washington stands out as a clear leader generating nearly 75 million MW of renewable energy in the year of 2022.
+From the previous queries and visualizations I was able to pinpoint the Northwest region as the top contender for Intel's new datacenter. Gaining further insight into the region, specifically state specific energy generation, took joining two new datasets containing individual power plant data. After visualizing the combined dataset and filtering data for the Northwest region, the state of Washington stood out as a clear leader generating nearly 75 million MW of renewable energy in the year of 2022.
 ```sql
 --Combining Data
 SELECT
