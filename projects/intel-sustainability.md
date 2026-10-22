@@ -12,7 +12,7 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 
 ## Key Data Insights
 ### 1. Identifying an Energy Surplus
-To find a suitable location for Intel's new data center, my first step was to identify grids operating with a power surplus. By querying national energy production against local demand, I isolated the 5 US regions that produce an energy surplus.
+To find a suitable location for Intel's new data center, my first step was to identify grids operating with a power surplus. A dataset containing information about daily energy production and consumption for different regions in the US can be used to find answers. By querying national energy production against local demand, I isolated 5 US regions that produce an energy surplus.
 ```sql
 --Surplus Energy Production
 SELECT
@@ -64,4 +64,18 @@ ORDER BY date, region, energy_type, energy_generated_mw;
 ```
 <p align="center">
 <img width="604" height="427" alt="Gemini_Generated_Image_8d3kb18d3kb18d3k" src="https://github.com/user-attachments/assets/95e85605-c472-4804-b929-12029dd05231" />
+</p>
+
+### 4. State Specific Energy Generation
+From our previous queries and visualizations I was able to pinpoint the Northwest region as the top contender for Intel's new datacenter. To gain further insight into the region, specifically state specific energy generation, took joining two new datasets containing individual power plant data. After visualizing our combined dataset and filtering data for the Northwest region, the state of Washington stands out as a clear leader generating nearly 75 million MW of renewable energy in the year of 2022.
+```sql
+SELECT
+  a.*,
+  b.*
+FROM intel.power plants AS a
+INNER JOIN intel.energy_by_plant AS b
+ON a.plant_code = b.plant_code
+```
+<p align="center">
+<img width="556" height="438" alt="Screenshot 2026-10-22 at 4 15 31 PM" src="https://github.com/user-attachments/assets/379bc04c-88e7-4317-99fc-94925833c0e6" />
 </p>
