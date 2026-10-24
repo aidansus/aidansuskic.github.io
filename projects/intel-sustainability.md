@@ -71,9 +71,12 @@ From the previous queries and visualizations I was able to pinpoint the Northwes
 ```sql
 --Combining Data
 SELECT
-  a.*,
-  b.*
-FROM intel.power plants AS a
+  a.plant_code,
+  a.region,
+  a.state,
+  b.energy_type,
+  b.energy_generated_mw
+FROM intel.power_plants AS a
 INNER JOIN intel.energy_by_plant AS b
 ON a.plant_code = b.plant_code
 ```
