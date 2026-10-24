@@ -78,7 +78,7 @@ SELECT
   b.energy_generated_mw
 FROM intel.power_plants AS a
 INNER JOIN intel.energy_by_plant AS b
-ON a.plant_code = b.plant_code
+ON a.plant_code = b.plant_code;
 ```
 <p align="center">
 <img width="556" height="438" alt="Screenshot 2026-10-22 at 4 15 31 PM" src="https://github.com/user-attachments/assets/379bc04c-88e7-4317-99fc-94925833c0e6" />
