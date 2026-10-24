@@ -71,7 +71,6 @@ From the previous queries and visualizations I was able to pinpoint the Northwes
 ```sql
 --Combining Data
 SELECT
-  a.plant_code,
   a.region,
   a.state,
   b.energy_type,
