@@ -8,7 +8,7 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 
 1. **Data Exploration and Transformation (SQL):** I queried and restructured datasets to isolate key metrics and prepare data for visualization. 
 2. **Data Visualization (Tableau):** I imported aggregated data into Tableau to create dynamic dashboards to visualize regional energy surpluses, leaders in renewable generation, and compare state level energy outputs.
-3. **Identifying Business Solutions** I built dynamic dashboards to map out regional surpluses, track hourly generation trends, and drill down into state-level renewable output[cite: 18, 22].
+3. **Identifying Business Solutions:** I analyzed dynamic data visualizations to pinpoint a location for a new data center that best met the required energy and sustaiability benchmarks set forth by Intel.
 
 ## Key Data Insights
 ### 1. Identifying an Energy Surplus
