@@ -84,4 +84,8 @@ ON a.plant_code = b.plant_code;
 </p>
 
 ## Identifying Business Solutions
-Through aggregation, transformation, and visualization using tools like SQL and Tableau I was able to take 3 datasets and craft a meaningful dashboard to present to Intel's sustainability team. Using tools like SQL and Tableau to aggregate and visualize data allowed clear insight into which region and more specifically which state would be able to best meet Intel's energy and sustainability benchmarks. 
+Using tools like SQL and Tableau to aggregate and visualize data allowed clear insight into which region and more specifically which state would be able to best meet Intel's energy and sustainability benchmarks. 
+
+<p align="center">
+<img width="604" height="427" alt="Gemini_Generated_Image_7h17ts7h17ts7h17" src="https://github.com/user-attachments/assets/3dcf7372-4e0e-4241-b2bc-9c3742074d60" />
+</p>
