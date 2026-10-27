@@ -1,7 +1,7 @@
 # Data Center Site Selection & Grid Analysis for Intel
 
 ## Project Objective
-Intel is planning to build a new data center and needs to identify the optimal location within the United States. The ideal site must meet energy demands of roughly 100 MW/year while adhering to Intel's sustainability goals, which require using 93% renewable energy. My objective was to analyze US energy grid data, evaluate regional power production, and recommend a state that provides an energy surplus and relies heavily on renewable sources.
+Intel is planning to build a new data center and needs to identify the optimal location within the United States. The ideal site must meet energy demands of roughly 100 MW/year while adhering to Intel's sustainability goals, which require using a majority renewable energy. My objective was to analyze US energy grid data, evaluate regional power production, and recommend a state that provides an energy surplus and relies heavily on renewable sources.
 
 ## The Approach
 To solve this, I analyzed three primary datasets containing daily US grid demand, regional energy generation by source, and specific power plant outputs for the year 2022. The project was broken down into three phases:
@@ -88,8 +88,8 @@ Using tools like SQL and Tableau to aggregate and visualize data allowed clear i
 1) The Northwest ranks 2nd in surplus energy production.
 2) The Northwest ranks 1st in percent renewable energy production.
 3) The Northwest generates renewable energy consistently throughout the year.
-4) Washington state ranks 1st both in total energy production and renewable energy production in the Northwest. 
-
+4) Washington state ranks 1st both in total energy production (~100M Mw/year) and percent renewable energy production (~75%) in the Northwest.
+   
 <p align="center">
 <img width="1396" height="780" alt="Screenshot 2026-10-26 at 5 16 02 PM" src="https://github.com/user-attachments/assets/81ddc120-b822-4b15-b215-875cb3c7aa0f" />
 </p>
