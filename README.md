@@ -6,8 +6,8 @@
 
 ## Featured Projects
 
-* **[INTEL Sustainability](./projects/intel-sustainability.md)**
-  * Brief Summary
+* **[Intel Sustainability](./projects/intel-sustainability.md)**
+  * Helped Intel's Sustainability Team decide a location for a new data center using data driven decision making to satisfy cooperate sustainabilty benchmarks.
     
 ---
 
