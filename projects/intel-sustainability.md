@@ -84,7 +84,7 @@ ON a.plant_code = b.plant_code;
 </p>
 
 ## Identifying Business Solutions
-Using tools like SQL and Tableau to aggregate and visualize data allowed clear insight into which region and more specifically which state would be able to best meet Intel's energy and sustainability benchmarks. **I used my final dashboard the communicate to Intel's why the state of Washington in the Northwest region to be a clear choice.**
+Using tools like SQL and Tableau to aggregate and visualize data allowed clear insight into which region and more specifically which state would be able to best meet Intel's energy and sustainability benchmarks. **I used my final dashboard the communicate to Intel why the state of Washington in the Northwest region was a clear choice.**
 1) The Northwest ranks 2nd in surplus energy production.
 2) The Northwest ranks 1st in percent renewable energy production.
 3) The Northwest generates renewable energy consistently throughout the year.
