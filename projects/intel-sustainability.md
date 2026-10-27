@@ -57,7 +57,7 @@ UNION ALL
 SELECT
   date,
   region,
-  (all_petroleum products + coal + natural gas + nuclear + other_fuel_sources) AS energy_generated_mw,
+  (all_petroleum_products + coal + natural gas + nuclear + other_fuel_sources) AS energy_generated_mw,
   'fossil fuel' AS energy_type
 FROM intel.energy_data
 ORDER BY date, region, energy_type, energy_generated_mw;
