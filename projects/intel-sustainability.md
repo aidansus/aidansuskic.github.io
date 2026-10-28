@@ -12,12 +12,12 @@ To solve this, I analyzed three primary datasets containing daily US grid demand
 
 ## Key Data Insights
 ### 1. Identifying an Energy Surplus
-To find a suitable location for Intel's new data center, my first step was to identify grids operating with a power surplus. A dataset containing information about daily energy production and consumption for different regions in the US helped me to find answers. By querying energy production against demand, I isolated 5 US regions that produced an energy surplus.
+To find a suitable location for Intel's new data center, my first step was to identify grids operating with a power surplus. A dataset containing information about daily energy production and consumption for different regions in the US helped me to find answers. By querying gross energy production against demand, I isolated 5 US regions that produced an energy surplus.
 ```sql
 --Surplus Energy Production
 SELECT
   region,
-  SUM(net_generation - demand) AS net_energy
+  SUM(gross_generation - demand) AS net_energy
 FROM intel.energy_data
 GROUP BY region
 ORDER BY net_energy DESC;
@@ -32,7 +32,7 @@ Next, I queried the dataset to calculate the percentage of total energy generati
 --Percent Renewable Energy
 SELECT
   region,
-  (SUM(hydropower_and_pumped_storage + wind + solar) / SUM(net_generation)) * 100 AS percent_renewable_generation
+  (SUM(hydropower_and_pumped_storage + wind + solar) / SUM(gross_generation)) * 100 AS percent_renewable_generation
 FROM intel.energy_data
 GROUP BY region
 ORDER BY percent_renewable_generation DESC;
