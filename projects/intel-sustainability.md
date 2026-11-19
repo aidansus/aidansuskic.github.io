@@ -1,7 +1,7 @@
 # Data Center Site Selection & Grid Analysis for Intel
 
 ## Project Objective
-Intel is planning to build a new data center and needs to identify the optimal location within the United States. The ideal site must meet energy demands of roughly 100 MW/year while adhering to Intel's sustainability goals, which require using a majority renewable energy. My objective was to analyze US energy grid data, evaluate regional power production, and recommend a state that provides an energy surplus and relies heavily on renewable sources.
+Intel is planning to build a new data center and needs to identify the optimal location within the United States. The ideal site must meet energy demands of roughly 100M MW/year while adhering to Intel's sustainability goals, which require using a majority renewable energy. My objective was to analyze US energy grid data, evaluate regional power production, and recommend a state that provides an energy surplus and relies heavily on renewable sources.
 
 ## The Approach
 To solve this, I analyzed three primary datasets containing daily US grid demand, regional energy generation by source, and specific power plant outputs for the year 2022. The project was broken down into three phases:
